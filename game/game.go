@@ -98,6 +98,6 @@ func getNextValueByNeighboursCount(currentCellState int, cellNeighboursCount int
 	case currentCellState == 0 && cellNeighboursCount == 3:
 		return 1
 	default:
-		return 0
+		return currentCellState
 	}
 }
