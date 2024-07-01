@@ -14,7 +14,7 @@ This project implements Conway's Game of Life in Golang. The Game of Life is a c
 ## Installation
 Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/guilhermetk/game-of-life.git
 ```
 
 ## Run
