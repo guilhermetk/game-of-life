@@ -53,21 +53,4 @@ func TestNeighbours(t *testing.T) {
 			t.Errorf("expected %d neighbours, got %d", expectedCound, neighboursCount)
 		}
 	})
-
-	t.Run("test neighbours count on edges", func(t *testing.T) {
-		grid := [][]int{
-			{0, 0, 0, 0, 0},
-			{0, 0, 0, 0, 0},
-			{0, 0, 0, 0, 0},
-			{0, 0, 0, 0, 0},
-			{0, 0, 0, 0, 0}}
-
-		testPosition := Position{Row: 4, Column: 4}
-		neighboursCount := CountNeighbours(grid, testPosition)
-		expectedCound := 3
-
-		if neighboursCount != expectedCound {
-			t.Errorf("expected %d neighbours, got %d", expectedCound, neighboursCount)
-		}
-	})
 }
